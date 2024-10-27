@@ -28,7 +28,7 @@ if ( !window[ 'PIE' ] && docMode < 10 ) {
         // Find script by filename match
         if( !script ) {
             for( var i = 0; i < doc.scripts.length; i++ ) {
-                if( /PIE_IE[6789]$JSVariant$\.js/.test( doc.scripts[ i ].src ) ) {
+                if( /PIE_IE(678|9)$JSVariant$\.js/.test( doc.scripts[ i ].src ) ) {
                     script = doc.scripts[ i ];
                     break;
                 }
